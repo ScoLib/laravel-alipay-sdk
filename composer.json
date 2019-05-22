@@ -1,0 +1,44 @@
+{
+    "name": "scolib/laravel-alipay-sdk",
+    "type": "library",
+    "description": "alipay-sdk for laravel",
+    "keywords": [
+        "scolib",
+        "laravel-alipay-sdk"
+    ],
+    "homepage": "https://github.com/scolib/laravel-alipay-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "klgd",
+            "email": "slice1213@gmail.com",
+            "homepage": "https://github.com/klgd",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.1",
+        "wi1dcard/alipay-sdk": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sco\\LaravelAlipaySdk\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Sco\\LaravelAlipaySdk\\LaravelServiceProvider"
+            ],
+            "aliases": {
+                "AopClient": "Sco\\LaravelAlipaySdk\\AopClientFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
